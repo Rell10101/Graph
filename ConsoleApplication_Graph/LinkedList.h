@@ -55,17 +55,10 @@ public:
     void addNode(const T& data);
     // Удаление узла по значению
     void removeNode(const T& data);
-    // поиск узла по значению
-    // true если узел найден, иначе false
-    bool searchNode(T& data) const;
     // поиск индекса узла, если не найден, то -1
     int searchNodeInd(const T& data) const;
     // значение узла по индексу
     T& dataByInd(int ind) const;
-    // вывод списка в консоль
-    void printList() const;
-    // вывод списка в файл
-    void printListToFile(const std::string& filename) const;
     // количеств узлов в списке
     int ListSize() const;
 
