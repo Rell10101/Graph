@@ -54,8 +54,7 @@ int main()
             cout << item << " ";
         }
         std::cout << std::endl;
-        std::cout << std::endl;
-        // копирование значений из старой матрицы смежности в новую 
+        std::cout << std::endl; 
         /*for (int i = 0; i < g.maxGraphSize; i++)
         {
             for (int j = 0; j < g.maxGraphSize; j++)

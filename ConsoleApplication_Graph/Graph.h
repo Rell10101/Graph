@@ -68,10 +68,6 @@ public:
 	// обход в ширину
 	vector<T> BreadthFirstSearch(const T& beginVertex) const;
 
-	// чтение из файла
-	void ReadFromFile(const string& filename);
-	// запись в файл
-	void WriteToFile(const string& filename) const;
 
 	// алгоритм Дейкстры
 	// возвращает вектор из кратчайших путей до каждой вершины из вершины beginVertex
