@@ -1,5 +1,5 @@
 #pragma once
-
+// разработчик: Самаев Антон ИВТ-21
 
 #include <vector>
 #include <stack>
@@ -18,16 +18,15 @@ class Graph
 		//и текущий размер (число вершин) графа
 		LinkedList<T> vertexList; // список вершин
 		// ** - двумерный массив(матрица). Указатель на указатель
+		int** edge;  // матрица смежности
+		int graphsize; // число вершин в графе
+		int maxGraphSize; // максимальное число вершин в графе
 		
-		
-
 		// методы для поиска вершины и указания ее позиции в списке
 		int GetVertexPos(const T& vertex1) const;
 
 public:
-	int** edge;  // матрица смежности
-	int graphsize; // число вершин в графе
-	int maxGraphSize; // максимальное число вершин в графе
+	
 	// конструктор с заданием максимального числа вершин maxsize
 	Graph(int maxsize = 1);
 
@@ -40,7 +39,6 @@ public:
 
 	// получение списка из соседних вершин
 	vector<T> GetNeighbors(const T& vertex) const;
-	//vector<T> GetFolowers(const T& vertex) const;
 
 	// количество вершин
 	int NumberOfVertices() const;

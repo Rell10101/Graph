@@ -1,7 +1,7 @@
 ﻿
+// разработчик: Самаев Антон ИВТ-21
 
 #include <iostream>
-//#include "LinkedList.h"
 #include "Graph.h"
 
 using namespace std;
